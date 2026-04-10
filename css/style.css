@@ -86,7 +86,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--spacing-xl);
     width: 100%;
     box-sizing: border-box;
 }
@@ -227,7 +227,7 @@ body {
 .hero-description {
     font-size: 1.125rem;
     color: var(--text-light);
-    max-width: 600px;
+    max-width: 650px;
     margin-bottom: var(--spacing-xl);
     line-height: 1.8;
 }
@@ -701,16 +701,33 @@ body {
 /* ========================================
    RESPONSIVIDADE
    ======================================== */
+/* Telas grandes - Mais espaçamento */
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 var(--spacing-2xl);
+    }
+    
+    .hero-content {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        padding: 0 var(--spacing-xl);
+    }
+}
+
 @media (max-width: 768px) {
     /* Container */
     .container {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-lg);
     }
     
     /* Header e Navegação */
     .header .container {
-        padding-left: var(--spacing-md);
-        padding-right: var(--spacing-md);
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
