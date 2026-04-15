@@ -1,18 +1,28 @@
-# Sistema operacional
-.DS_Store
-Thumbs.db
-
-# Editores
+# Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Temporários
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
 *.tmp
 *.bak
-
-# Logs
 *.log
-npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Env
+.env
+.env.local
+*.local
